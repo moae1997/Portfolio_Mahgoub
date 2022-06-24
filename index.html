@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Mahgoub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="mypic">
+            <img src="myPic.jpg" alt="portfolio picture">
+        </div>
+        <div class="nav_btns">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <div class="title">
+            <div class="name">
+            <h1 class="first">Mohamed</h1> 
+            <h1 class="second">Mahgoub</h1>
+            </div>
+            <p class="role">Web Developer</p>
+        </div>
+        <div id="hide">
+        <div class="whoamI">
+            <p>A self-taught web developer. Self disciplined, when I set goals I achieve them. Also I am a fast learner and always flexible to change in order to achieve my goals. I like to try new ways to improve and through failure I learn the most</p>
+            <div class="show_btn"><button id="show">Show My Story</button></div>
+        </div>
+        </div>
+        <div id="hid" class="hide">
+        <div class="mystory">
+            <p>My passion is to create great changes to improve the world.  I chose to get my bachelor's degree in nursing and then go to medical school to become a Cardiologist.  As I was going to school I started working at a hospital and through my four years of experience there I didn't see myself fitting into a doctor's role.  Although I was half way through nursing school and all my prerequsites for medical school were completed, I decided to change careers to IT and I got my bachelor's degree in Computer Networking and Cybersecurity with a 4.0 GPA.  I got a job at Amazon Web Services and there I was introduced to programming.  I saw programming as a great way to achieve my goal since technology is where the world is heading towards today.</p>
+            <div class="back_btn">
+            <button id="back">back</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="projects" class="projects">
+        <div class="prev_btn">
+        <button onclick="myShow.previous()">&#8249;</button>
+        </div>
+        <div>
+        <div class="project">
+            <h1>A Website to Submit a Will</h1>
+            <div class="project_img">
+            <img src="will.PNG" alt="BankofWills">
+            </div>
+            <div>
+                <p>I made this website to practise creating a login system.  The idea behind it being for a will is from a friend.</p>
+            </div>
+            <div>
+            <a href="https://willbank12.herokuapp.com/">Live Website</a>
+            <a href="https://github.com/moae1997/BankofWills">Github Code</a>
+            </div>
+        </div>
+        <div class="project">
+            <h1>Beauty Artist Website</h1>
+            <div class="project_img">
+            <img src="beauty.PNG" alt="Aeyiamaa Beauty">
+            </div>
+            <div>
+                <p>This is a website I made for my wife.  Her Costumers are able to book appointments and submit reviews</p>
+            </div>
+            <div>
+            <a href="https://aeyiamaa.herokuapp.com/">Live Website</a>
+            <a href="https://github.com/moae1997/AEYIAMAA-BEAUTY">Github Code</a>
+            </div>
+        </div>
+        <div class="project">
+            <h1>*Coming Soon* Online Store</h1>
+            <div class="project_img">
+            <img class="op" src="store.PNG" alt="Store">
+            </div>
+        </div>
+        </div>
+            <div class="nex_btn">
+            <button onclick="myShow.next()">&#8250;</button>
+            </div>
+            
+            <script>
+            myShow = w3.slideshow(".project", 6000);
+            </script>
+    </div>
+
+    <div class="skills">
+        <div class="skill">
+            <img src="javascript-programming-language.png" alt="Javascript">
+            <h2>Javascript</h2>
+        </div>
+        <div class="skill">
+            <img src="node-js.png" alt="NodeJS">
+            <h2>Node.js</h2>
+        </div>
+        <div class="skill">
+            <img src="expressjs.png" alt="Express">
+            <h2>Express.js</h2>
+        </div>
+        <div class="skill">
+            <img src="mongodb.png" alt="MongoDB">
+            <h2>MongoDB</h2>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="contacts">
+            <p>moae619@hotmail.com</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/mohamed-mahgoub-aa5591215/" target="_blank"><img src="linkedin-app.png" alt="Linkin">LinkedIn</a>
+            <a href="https://github.com/moae1997" target="_blank"><img src="github.png" alt="Github">Github</a>
+        </div>
+    </div>
+</body>
+<script src="func.js"></script>
+</html>
